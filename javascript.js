@@ -2,7 +2,7 @@ const spin = document.getElementById("spin");
 const container = document.querySelector(".container");
 const input = document.getElementById("inp");
 const undos = document.querySelectorAll(".fa-undo-alt")
-    document.getElementById("inp").value = -10;
+document.getElementById("inp").value = -10;
 container.style.transform = "rotateZ(-10deg)";
 spin.addEventListener("click", () => {
     const RandomNum = Math.abs(Math.floor((Math.random() * 10) - 3));
@@ -339,10 +339,28 @@ spin.addEventListener("click", () => {
     setTimeout(() => {
         container.style.animation = ""
     }, 4000);
-})
-document.querySelectorAll(".col-3").forEach((val)=>{
+});
+document.querySelectorAll(".colorOpacity").forEach((val)=>{
     val.addEventListener("click",function(){
-    this.children[3].innerHTML = parseInt(this.children[3].innerHTML) + 1;
+    this.parentElement.children[3].innerHTML = parseInt(this.parentElement.children[3].innerHTML) + 1;
     document.querySelector(".useramount").children[2].innerHTML = parseInt(document.querySelector(".useramount").children[2].innerHTML) - 5;
-})
+    this.parentElement.children[1].style.display="block"
+});
+});
+undos.forEach((undo)=>{
+    undo.addEventListener("click",function(){
+        if (this.parentElement.children[3].innerHTML > 0) {
+            this.parentElement.children[3].innerHTML = parseInt(this.parentElement.children[3].innerHTML) - 1;
+            document.querySelector(".useramount").children[2].innerHTML = parseInt(document.querySelector(".useramount").children[2].innerHTML) + 5;
+            if (this.parentElement.children[3].innerHTML === "0") {
+                undo.style.display="none"
+            }
+
+        }
+   
+    });
+});
+document.querySelector(".spincontainer").addEventListener("click",function(){
+    document.querySelector(".bets").style.animation="8s forBets"
+    // document.querySelector(".bets").style.display="none"
 })

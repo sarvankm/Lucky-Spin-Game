@@ -27,12 +27,13 @@ body{
 .useramount{
     position: absolute;
     width: 170px;
-    top: 30%;
-    right: 5%;
+    top: 200px;
+    right:  5%;
     display: flex;
     flex-wrap: wrap;
     background: gray;
     color: white;
+    animation: none;
     border-radius: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -54,6 +55,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    transition: 0.4s ease-in-out;
 }
 .secondpartbets{
     width: 590px;
@@ -384,8 +386,9 @@ body{
     right: 55px;
     top: 8px;
     font-size: 17px;
-    z-index: 1000;
+    z-index: 100;
     transition: 0.2s ease-in-out;
+    display: none;
 }
 .fa-undo-alt:hover{
     color: #0D0D0D;
@@ -912,5 +915,15 @@ body{
     }
     100% {
         transform: rotateZ(3640deg);
+    }
+}
+
+@keyframes forBets{
+    0%{
+       position: absolute;
+       top: 100%;
+    }
+    100%{
+        top: 400%;
     }
 }
