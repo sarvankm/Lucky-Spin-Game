@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div class="backgroundColor"></div>
     <div class="container">
         <div class="slice"></div>
         <div class="slice1"></div>
@@ -16,19 +22,85 @@
         <div class="slice4"></div>
         <div class="slice5"></div>
         <div class="slice6"></div>
-        <p class="text1 color">BINGO</p>
-        <p class="text2 color">BINGO</p>
-        <p class="text3 color">BINGO</p>
-        <p class="text4 color">BINGO</p>
-        <p class="text5 color">BINGO</p>
-        <p class="text6 color">BINGO</p>
-        <p class="text7 color">BINGO</p>
+        <p class="text1 color">1</p>
+        <p class="text2 color">2</p>
+        <p class="text3 color">3</p>
+        <p class="text4 color">4</p>
+        <p class="text5 color">5</p>
+        <p class="text6 color">6</p>
+        <p class="text7 color">7</p>
         <input id="inp" type="hidden">
     </div>
     <div class="spincontainer">
         <div id="spin">
             <div id="inner-spin"></div>
         </div>
+    </div>
+    <div class="bets">
+        <div class="col-3 number1">
+            <div class="colorOpacity color-1">
+            </div>
+            <i class="fas fa-undo-alt"></i>
+            <i class="fas fa-coins"></i>
+            <p class="betcount">0</p>
+            <p>1</p>
+        </div>
+        <div class="col-3 number2">
+            <div class="colorOpacity color-2">
+            </div>
+            <i class="fas fa-undo-alt"></i>
+            <i class="fas fa-coins"></i>
+            <p class="betcount">0</p>
+            <p>2</p>
+        </div>
+        <div class="col-3 number3">
+            <div class="colorOpacity color-3">
+            </div>
+            <i class="fas fa-undo-alt"></i>
+            <i class="fas fa-coins"></i>
+            <p class="betcount">0</p>
+            <p>3</p>
+        </div>
+        <div class="col-3 number4">
+            <div class="colorOpacity color-4">
+            </div>
+            <i class="fas fa-undo-alt"></i>
+            <i class="fas fa-coins"></i>
+            <p class="betcount">0</p>
+            <p>4</p>
+        </div>
+        <div class="secondpartbets">
+            <div class="col-3 number5">
+                <div class="colorOpacity color-5">
+                </div>
+                <i class="fas fa-undo-alt"></i>
+                <i class="fas fa-coins"></i>
+                <p class="betcount">0</p>
+                <p>5</p>
+            </div>
+            <div class="col-3 number6">
+                <div class="colorOpacity color-6">
+                </div>
+                <i class="fas fa-undo-alt"></i>
+                <i class="fas fa-coins"></i>
+                <p class="betcount">0</p>
+                <p>6</p>
+            </div>
+            <div class="col-3 number7">
+                <div class="colorOpacity color-7">
+                </div>
+                <i class="fas fa-undo-alt"></i>
+                <i class="fas fa-coins"></i>
+                <p class="betcount">0</p>
+                <p>7</p>
+            </div>
+        </div>
+    </div>
+    <div class="useramount">
+        <p style="display: inline-block;">1 bet = 5 USD</p>
+        <p>Amount:</p>
+        <p>1000</p>
+        <p>USD</p>
     </div>
     <script src="javascript.js"></script>
 </body>

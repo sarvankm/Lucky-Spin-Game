@@ -1,10 +1,10 @@
 const spin = document.getElementById("spin");
 const container = document.querySelector(".container");
-const input=document.getElementById("inp");
-document.getElementById("inp").value = -10;
+const input = document.getElementById("inp");
+const undos = document.querySelectorAll(".fa-undo-alt")
+    document.getElementById("inp").value = -10;
 container.style.transform = "rotateZ(-10deg)";
 spin.addEventListener("click", () => {
-    
     const RandomNum = Math.abs(Math.floor((Math.random() * 10) - 3));
     if (RandomNum === 0) {
         if (input.value === "-10") {
@@ -45,6 +45,11 @@ spin.addEventListener("click", () => {
         else if (input.value === "-360") {
             container.style.transform = "rotateZ(-260deg)";
             container.style.animation = "4s anm8"
+            input.value = "-260"
+        }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(-260deg)";
+            container.style.animation = "4s anm9"
             input.value = "-260"
         }
     }
@@ -89,6 +94,11 @@ spin.addEventListener("click", () => {
             container.style.animation = "4s Slice2Anm8"
             input.value = "-210"
         }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(-210deg)";
+            container.style.animation = "4s Slice2Anm9"
+            input.value = "-210"
+        }
     }
     if (RandomNum === 2) {
         if (input.value === "-10") {
@@ -129,6 +139,11 @@ spin.addEventListener("click", () => {
         else if (input.value === "-360") {
             container.style.transform = "rotateZ(-160deg)";
             container.style.animation = "4s Slice3Anm8"
+            input.value = "-160"
+        }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(-160deg)";
+            container.style.animation = "4s Slice3Anm9"
             input.value = "-160"
         }
     }
@@ -173,6 +188,11 @@ spin.addEventListener("click", () => {
             container.style.animation = "4s Slice4Anm8"
             input.value = "-110"
         }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(-110deg)";
+            container.style.animation = "4s Slice4Anm9"
+            input.value = "-110"
+        }
     }
     if (RandomNum === 4) {
         if (input.value === "-10") {
@@ -213,6 +233,11 @@ spin.addEventListener("click", () => {
         else if (input.value === "-360") {
             container.style.transform = "rotateZ(-60deg)";
             container.style.animation = "4s Slice5Anm8"
+            input.value = "-60"
+        }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(-60deg)";
+            container.style.animation = "4s Slice5Anm9"
             input.value = "-60"
         }
     }
@@ -257,6 +282,12 @@ spin.addEventListener("click", () => {
             container.style.animation = "4s Slice6Anm8"
             input.value = "-10"
         }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(-10deg)";
+            container.style.animation = "4s Slice6Anm9"
+            input.value = "-10"
+        }
+
     }
     if (RandomNum === 6) {
         if (input.value === "-10") {
@@ -299,8 +330,19 @@ spin.addEventListener("click", () => {
             container.style.animation = "4s Slice7Anm8"
             input.value = "40"
         }
+        else if (input.value === "40") {
+            container.style.transform = "rotateZ(40deg)";
+            container.style.animation = "4s Slice7Anm9"
+            input.value = "40"
+        }
     }
     setTimeout(() => {
         container.style.animation = ""
     }, 4000);
+})
+document.querySelectorAll(".col-3").forEach((val)=>{
+    val.addEventListener("click",function(){
+    this.children[3].innerHTML = parseInt(this.children[3].innerHTML) + 1;
+    document.querySelector(".useramount").children[2].innerHTML = parseInt(document.querySelector(".useramount").children[2].innerHTML) - 5;
+})
 })
