@@ -1,10 +1,11 @@
-html{
+html {
     background: url(./assets/img/gettyimages-490793102-640x640.jpg) no-repeat center center fixed;
     background-size: cover;
-    background-blend-mode:color;
+    background-blend-mode: color;
     position: relative;
 }
-.backgroundColor{
+
+.backgroundColor {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -14,7 +15,8 @@ html{
     opacity: 0.1;
     z-index: -1;
 }
-body{
+
+body {
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,122 +24,141 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 1.5%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
-.useramount{
+
+.useramount {
     position: absolute;
     width: 170px;
     top: 200px;
-    right:  5%;
+    right: 5%;
     display: flex;
     flex-wrap: wrap;
-    background: gray;
+    background: #6e6a88;
     color: white;
     animation: none;
     border-radius: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.useramount p:not(:last-child){
- padding: 10px;
- padding-right: 0;
+
+.useramount p:not(:last-child) {
+    padding: 10px;
+    padding-right: 0;
 }
-.useramount p:first-child{
+
+.useramount p:first-child {
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.useramount p:last-child{
+
+.useramount p:last-child {
     padding: 10px 3px;
     padding-right: 10px;
 }
-.bets{
+
+.bets {
     width: 800px;
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    transition: 0.4s ease-in-out;
 }
-.secondpartbets{
+
+.secondpartbets {
     width: 590px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+}
 
+.col-3 {
+    width: 70px;
+    padding: 15px 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-.col-3{
- width: 70px;
- padding: 15px 50px;
- margin-top: 20px;
- border-radius: 10px;
- cursor: pointer;
-}
-.number1{
+
+.number1 {
     background: #0007A3;
     position: relative;
     border: 7px solid #7077f3;
 }
-.colorOpacity{
+
+.colorOpacity {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;height: 100%;opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
 }
-.color-1{
+
+.color-1 {
     background: #0007A3;
 }
-.color-2{
+
+.color-2 {
     background: #0060B2;
 }
-.color-3{
+
+.color-3 {
     background: #009EC4;
 }
-.color-4{
+
+.color-4 {
     background: #F76100;
 }
-.color-5{
+
+.color-5 {
     background: #F78F00;
 }
-.color-6{
+
+.color-6 {
     background: #F7C100;
 }
-.color-7{
+
+.color-7 {
     background: #F7F600;
 }
-.number2{
+
+.number2 {
     background: #0060B2;
     position: relative;
     border: 7px solid rgb(101, 167, 224);
 }
-.number3{
+
+.number3 {
     position: relative;
     background: #009EC4;
     border: 7px solid #66bacf;
 }
-.number4{
+
+.number4 {
     background: #F76100;
     position: relative;
     border: 7px solid #f3995d;
-
 }
-.number5{
+
+.number5 {
     background: #F78F00;
     position: relative;
     border: 7px solid #f5ae4b;
-
 }
-.number6{
+
+.number6 {
     background: #F7C100;
     position: relative;
     border: 7px solid #ffd84c;
-
 }
-.number7{
+
+.number7 {
     background: #F7F600;
     position: relative;
     border: 7px solid #ffff5f;
-
 }
-.col-3 p:last-child{
+
+.col-3 p:last-child {
     font-size: 25px;
     border: 2px solid;
     display: inline-block;
@@ -149,10 +170,11 @@ body{
     background: #151312;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.spincontainer{
+
+.spincontainer {
     width: 400px;
     height: 400px;
-    position: relative; 
+    position: relative;
     margin-top: -400px;
 }
 
@@ -293,7 +315,7 @@ body{
     padding: 3px 8px;
     padding-bottom: 5px;
     background-color: #151312;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #spin {
@@ -374,7 +396,7 @@ body{
     font-size: 15px;
 }
 
-.fas{
+.fas {
     position: absolute;
     top: 5px;
     right: 25px;
@@ -382,7 +404,8 @@ body{
     color: white;
     opacity: 0.9;
 }
-.fa-undo-alt{
+
+.fa-undo-alt {
     right: 55px;
     top: 8px;
     font-size: 17px;
@@ -390,10 +413,12 @@ body{
     transition: 0.2s ease-in-out;
     display: none;
 }
-.fa-undo-alt:hover{
+
+.fa-undo-alt:hover {
     color: #0D0D0D;
 }
-.betcount{
+
+.betcount {
     position: absolute;
     top: 1px;
     margin: 0;
@@ -402,6 +427,11 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
 }
+
+.swal2-confirm {
+    display: none !important;
+}
+
 .container {
     width: 400px;
     height: 400px;
@@ -413,6 +443,7 @@ body{
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     border: 4px solid white;
 }
+
 @keyframes anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -421,6 +452,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -429,6 +461,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -437,6 +470,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -445,6 +479,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -453,6 +488,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -461,6 +497,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -469,6 +506,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -477,6 +515,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -485,6 +524,7 @@ body{
         transform: rotateZ(3340deg);
     }
 }
+
 @keyframes Slice2Anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -493,6 +533,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -501,6 +542,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -509,6 +551,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -517,6 +560,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -525,6 +569,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -533,6 +578,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -541,6 +587,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -549,6 +596,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice2Anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -557,6 +605,7 @@ body{
         transform: rotateZ(3390deg);
     }
 }
+
 @keyframes Slice3Anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -565,6 +614,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -573,6 +623,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -581,6 +632,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -589,6 +641,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -597,6 +650,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -605,6 +659,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -613,6 +668,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -621,6 +677,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice3Anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -629,6 +686,7 @@ body{
         transform: rotateZ(3440deg);
     }
 }
+
 @keyframes Slice4Anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -637,6 +695,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -645,6 +704,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -653,6 +713,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -661,6 +722,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -669,6 +731,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -677,6 +740,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -685,6 +749,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -693,6 +758,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice4Anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -701,6 +767,7 @@ body{
         transform: rotateZ(3490deg);
     }
 }
+
 @keyframes Slice5Anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -709,6 +776,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -717,6 +785,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -725,6 +794,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -733,6 +803,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -741,6 +812,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -749,6 +821,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -757,6 +830,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -765,6 +839,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice5Anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -773,6 +848,7 @@ body{
         transform: rotateZ(3540deg);
     }
 }
+
 @keyframes Slice6Anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -781,6 +857,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -789,6 +866,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -797,6 +875,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -805,6 +884,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -813,6 +893,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -821,6 +902,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -829,6 +911,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -837,6 +920,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice6Anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -845,6 +929,7 @@ body{
         transform: rotateZ(3590deg);
     }
 }
+
 @keyframes Slice7Anm1 {
     0% {
         transform: rotateZ(-10deg);
@@ -853,6 +938,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm2 {
     0% {
         transform: rotateZ(-260deg);
@@ -861,6 +947,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm3 {
     0% {
         transform: rotateZ(-60deg);
@@ -869,6 +956,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm4 {
     0% {
         transform: rotateZ(-110deg);
@@ -877,6 +965,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm5 {
     0% {
         transform: rotateZ(-160deg);
@@ -885,6 +974,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm6 {
     0% {
         transform: rotateZ(-210deg);
@@ -893,6 +983,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm7 {
     0% {
         transform: rotateZ(-310deg);
@@ -901,6 +992,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm8 {
     0% {
         transform: rotateZ(-360deg);
@@ -909,6 +1001,7 @@ body{
         transform: rotateZ(3640deg);
     }
 }
+
 @keyframes Slice7Anm9 {
     0% {
         transform: rotateZ(40deg);
@@ -918,12 +1011,22 @@ body{
     }
 }
 
-@keyframes forBets{
-    0%{
-       position: absolute;
-       top: 100%;
+@keyframes forBets {
+    0% {
+        position: absolute;
+        top: 100%;
     }
-    100%{
+    100% {
         top: 400%;
+    }
+}
+
+@keyframes forBets2 {
+    0% {
+        position: absolute;
+        top: 400%;
+    }
+    100% {
+        top: 100%;
     }
 }
