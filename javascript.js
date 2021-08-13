@@ -378,9 +378,9 @@ document.querySelector("#spin").addEventListener("click", function () {
             if (text.innerHTML != "0") {
                 if (parseInt(text.nextElementSibling.innerHTML) == RandomNumGlobal + 1) {
                     setTimeout(() => {
-                        document.querySelector(".useramount").children[3].innerHTML = parseInt(document.querySelector(".useramount").children[3].innerHTML) + parseInt(text.nextElementSibling.innerHTML) * 5 + 5;
+                        document.querySelector(".useramount").children[3].innerHTML = parseInt(document.querySelector(".useramount").children[3].innerHTML) + parseInt(text.nextElementSibling.innerHTML) * 5 *(parseInt(text.innerHTML))+ 5;
                         Swal.fire({
-                            title: `CONGURATULATIONS </br> YOU WON ${parseInt(text.nextElementSibling.innerHTML) * 5 + 5} USD`,
+                            title: `CONGURATULATIONS </br> YOU WON ${parseInt(text.nextElementSibling.innerHTML) * 5 * (parseInt(text.innerHTML)) + 5} USD`,
                             width: 600,
                             timer: 3000,
                             padding: '3em',
@@ -390,10 +390,13 @@ document.querySelector("#spin").addEventListener("click", function () {
                           url("assets/img/confetti.gif")
                         `
                         })
+
                     }, 3500);
                 };
+                setTimeout(() => {
+                    text.innerHTML = "0"
+                }, 3500);
             };
-            text.innerHTML = "0"
         });
         document.querySelectorAll(".fa-undo-alt").forEach((icon) => {
             icon.style.display = "none";
